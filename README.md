@@ -1,3 +1,3 @@
 ## Reference
-[go-clean-arch](https://github.com/evrone/go-clean-template) by Bxcodec
-
+[go-clean-temple](https://github.com/evrone/go-clean-template) by Evrrone
+[ the Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) by Uncle Bob
