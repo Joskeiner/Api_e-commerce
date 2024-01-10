@@ -1,0 +1,57 @@
+version: "3"
+
+dotenv:
+  - ".env"
+
+tasks:
+  default:
+    desc: "Let' start"
+    cmds:
+      - task: install
+
+install:
+  desc: "Install dependencies - Instalando dependecias"
+  cmds:
+    - go install github.com/go-task/task/v3/cmd/task@latest
+    - go install github.com/cosmtrek/air@latest
+    - go install github.com/swaggo/swag/cmd/swag@latest
+    - go install go.uber.org/mock/mockgen@latest
+    - go install github.com/onsi/ginkgo/v2/ginkgo@latest
+    - go get github.com/onsi/gomega/...
+
+service:up:
+  desc: "Start services containers"
+  cmd: docker-compose  up -d  ; docker-compose logs -f
+
+service:down:all:
+  desc: "Stop services and remove containers"
+  cmd: docker stop $(docker ps -aq) ; docker rm $(docker ps -a -q)
+
+service:down:
+  desc: "Stop containers"
+  cmd: docker stop $(docker ps -aq)
+
+dev:
+  desc: "Start development server"
+  cmd: air
+
+build:
+  desc: "build binary"
+  cmd: go build -o ./bin/{{.APP_NAME}} ./cmd/app/main.go
+  requires:
+    vars:
+      - APP_NAME
+
+start:
+  desc: "Start binary"
+  cmd: ./bin/{{.APP_NAME}}
+  requires:
+    vars:
+      - APP_NAME
+
+generete:
+  desc: "Generate code"
+  cmd: go generate ./...
+
+test:
+  desc: "Run tests"
