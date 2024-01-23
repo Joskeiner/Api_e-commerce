@@ -1,6 +1,7 @@
 package config
 
 import (
+	"fmt"
 	"os"
 	"path/filepath"
 
@@ -21,6 +22,7 @@ func newViper() (Config, error) {
 	dir := filepath.Dir(path)
 
 	v.AddConfigPath(dir)
+	fmt.Println(dir)
 	v.SetConfigFile(".env")
 	v.AutomaticEnv()
 
@@ -45,7 +47,7 @@ func (v *Viper) Load() (*Container, error) {
 		return nil, err
 	}
 
-	db, err := v.newDBConfig()
+	/*db, err := v.newDBConfig()
 	if err != nil {
 		return nil, err
 	}
@@ -53,13 +55,13 @@ func (v *Viper) Load() (*Container, error) {
 	token, err := v.newTokenConfig()
 	if err != nil {
 		return nil, err
-	}
+	}*/
 
 	return &Container{
-		App:      app,
-		Http:     http,
-		Databese: db,
-		Token:    token,
+		App:  app,
+		Http: http,
+		// Databese: db,
+		// Token:    token,
 	}, nil
 }
 
@@ -83,7 +85,7 @@ func (v *Viper) newHttpConfig() (*Http, error) {
 	return &http, nil
 }
 
-func (v *Viper) newDBConfig() (*Databese, error) {
+/*func (v *Viper) newDBConfig() (*Databese, error) {
 	var db Databese
 
 	err := v.Viper.Unmarshal(&db)
@@ -91,13 +93,13 @@ func (v *Viper) newDBConfig() (*Databese, error) {
 		return nil, err
 	}
 	return &db, nil
-}
+}*/
 
-func (v *Viper) newTokenConfig() (*Token, error) {
+/*func (v *Viper) newTokenConfig() (*Token, error) {
 	var token Token
 	err := v.Viper.Unmarshal(&token)
 	if err != nil {
 		return nil, err
 	}
 	return &token, nil
-}
+}*/

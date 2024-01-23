@@ -8,10 +8,10 @@ type Config interface {
 
 type (
 	Container struct {
-		App      *App
-		Http     *Http
-		Databese *Databese
-		Token    *Token
+		App  *App
+		Http *Http
+		// Databese *Databese
+		// Token    *Token
 	}
 	App struct {
 		Name string `mapstructure:"APP_NAME"`
