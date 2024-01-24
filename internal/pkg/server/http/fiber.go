@@ -9,6 +9,7 @@ import (
 	"github.com/gofiber/fiber/v2/middleware/logger"
 )
 
+// Http is a wrapper for Fiber router
 type Http struct {
 	App      *fiber.App
 	Validate *validator.Validate
@@ -16,6 +17,7 @@ type Http struct {
 	cfg      *config.Http
 }
 
+// New creates a new Fiber router instance
 func New(cfg *config.Http, logger log.Logger) *Http {
 	app := fiber.New()
 
@@ -37,14 +39,15 @@ func New(cfg *config.Http, logger log.Logger) *Http {
 	}
 }
 
+// Start starts the Http server
 func (h *Http) Start() error {
 	listenAddr := h.cfg.Url + ":" + h.cfg.Port
 	return h.App.Listen(listenAddr)
 }
 
+// customLogger is a custom logger for Fiber
 func customLogger(l log.Logger) fiber.Handler {
 	format := "${status} | ${method} | ${path} | ${protocol} | ${ip} | ${latency} | ${ua}\n"
-
 	return logger.New(logger.Config{
 		Format:        format,
 		DisableColors: true,

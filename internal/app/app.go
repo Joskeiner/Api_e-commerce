@@ -2,6 +2,7 @@ package app
 
 import (
 	"github.com/Joskeiner/Api_e-commerce/internal/pkg/config"
+	"github.com/Joskeiner/Api_e-commerce/internal/pkg/database"
 	"github.com/Joskeiner/Api_e-commerce/internal/pkg/log"
 	"github.com/Joskeiner/Api_e-commerce/internal/pkg/server/http"
 )
@@ -29,6 +30,16 @@ func Run() {
 		log.Fatal("faild to load the config", "error", err)
 	}
 	log.Info("succeed to load the config")
+
+	db, err := database.New(cfg.Databese)
+	if err != nil {
+		log.Fatal("faild to initialize the database")
+	}
+	defer db.Close()
+	if err := db.Migrate(); err != nil {
+		log.Fatal("faild to migrate the database", "error", err)
+	}
+	log.Info("succed to migrate the database")
 
 	server := http.New(cfg.Http, log)
 
