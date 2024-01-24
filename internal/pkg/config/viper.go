@@ -47,20 +47,20 @@ func (v *Viper) Load() (*Container, error) {
 		return nil, err
 	}
 
-	/*db, err := v.newDBConfig()
+	db, err := v.newDBConfig()
 	if err != nil {
 		return nil, err
 	}
-
-	token, err := v.newTokenConfig()
-	if err != nil {
-		return nil, err
-	}*/
+	/*
+		token, err := v.newTokenConfig()
+		if err != nil {
+			return nil, err
+		}*/
 
 	return &Container{
-		App:  app,
-		Http: http,
-		// Databese: db,
+		App:      app,
+		Http:     http,
+		Databese: db,
 		// Token:    token,
 	}, nil
 }
@@ -85,7 +85,7 @@ func (v *Viper) newHttpConfig() (*Http, error) {
 	return &http, nil
 }
 
-/*func (v *Viper) newDBConfig() (*Databese, error) {
+func (v *Viper) newDBConfig() (*Databese, error) {
 	var db Databese
 
 	err := v.Viper.Unmarshal(&db)
@@ -93,7 +93,7 @@ func (v *Viper) newHttpConfig() (*Http, error) {
 		return nil, err
 	}
 	return &db, nil
-}*/
+}
 
 /*func (v *Viper) newTokenConfig() (*Token, error) {
 	var token Token

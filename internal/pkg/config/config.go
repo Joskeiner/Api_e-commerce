@@ -8,9 +8,9 @@ type Config interface {
 
 type (
 	Container struct {
-		App  *App
-		Http *Http
-		// Databese *Databese
+		App      *App
+		Http     *Http
+		Databese *Databese
 		// Token    *Token
 	}
 	App struct {
@@ -27,9 +27,9 @@ type (
 		Conn        string `mapstructure:"DB_CONNECTION"`
 		Host        string `mapstructure:"DB_HOST"`
 		Port        string `mapstructure:"DB_PORT"`
-		Name        string `mapstructure:"DB_NAME"`
-		Username    string `mapstructure:"DB_USERNAME"`
-		Password    string `mapstructure:"DB_PASSWORD"`
+		Name        string `mapstructure:"POSTGRES_DB"`
+		Username    string `mapstructure:"POSTGRES_USER"`
+		Password    string `mapstructure:"POSTGRES_PASSWORD"`
 		MaxLifeTime int    `mapstructure:"DB_MAX_LIFE_TIME"`
 		MaxOpenConn int    `mapstructure:"DB_MAX_OPEN_CONNECTIONS"`
 		MaxIdleConn int    `mapstructure:"DB_MAX_IDLE_CONNECTIONS"`
