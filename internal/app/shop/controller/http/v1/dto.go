@@ -10,9 +10,10 @@ type shopParam struct {
 }
 
 // shopQuery is a struct for validating shop query parameter
+
 type shopQuery struct {
-	Page  int    `form:"page" validate:"required, min=1"`
-	Limit int    `form:"limit"  validate:"limit" validate:"required,min=5"`
+	Page  int    `form:"page" validate:"required,min=1"`
+	Limit int    `form:"limit" validate:"required,min=5"`
 	Name  string `form:"name" validate:"omitempty"`
 }
 
