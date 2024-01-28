@@ -28,5 +28,5 @@ type ShopUseCase interface {
 
 	GetByID(ctx context.Context, id uint) (*Shop, error)
 
-	Update(ctx context.Context, shop *Shop) error
+	Update(ctx context.Context, userID, id uint) error
 }
