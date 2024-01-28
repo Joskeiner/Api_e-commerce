@@ -1,6 +1,7 @@
 package app
 
 import (
+	"github.com/Joskeiner/Api_e-commerce/internal/app/shop"
 	"github.com/Joskeiner/Api_e-commerce/internal/pkg/config"
 	"github.com/Joskeiner/Api_e-commerce/internal/pkg/database"
 	"github.com/Joskeiner/Api_e-commerce/internal/pkg/log"
@@ -44,6 +45,7 @@ func Run() {
 	server := http.New(cfg.Http, log)
 
 	// dependency injection
+	shop.New(db, server)
 	log.Info("strating the aplication", "name", cfg.App.Name, "enviroment", cfg.App.Env)
 
 	if err := server.Start(); err != nil {
