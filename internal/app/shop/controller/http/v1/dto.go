@@ -6,7 +6,7 @@ import (
 
 // shopParam is a struct for validating shop path parameter
 type shopParam struct {
-	ID uint32 `params:"id" validate:"required"`
+	ID uint `params:"id" validate:"required"`
 }
 
 // shopQuery is a struct for validating shop query parameter

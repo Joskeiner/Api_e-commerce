@@ -76,17 +76,58 @@ func (sc *ShopControllerV1) GetUserShop(ctx *fiber.Ctx) error {
 }
 
 // GetByID handles Get /shops/:id request
-/*func (sc *ShopControllerV1) GetByID(ctx *fiber.Ctx) error{
-  var p shopParam
+func (sc *ShopControllerV1) GetByID(ctx *fiber.Ctx) error {
+	var p shopParam
 
-  if err:= ctx.ParamsParser(&p); err != nil {
-    sc.server.Logger.Error("faild to parse path parameter", "error", err)
-    return helper.Response(ctx, fiber.StatusBadRequest, false, helper.FAILEDGETDATA, err, nil)
-  }
-  if err:= sc.server.Validate.Struct(&p); err != nil {
-    sc.server.Logger.Error("faild to validate path parameter", "error", err)
-    return helper.Response(ctx, fiber.StatusBadRequest, false, helper.FAILEDGETDATA, err, nil)
-  }
-  res , err := sc.uc.GetByID(ctx.Context(), p.ID)
+	if err := ctx.ParamsParser(&p); err != nil {
+		sc.server.Logger.Error("faild to parse path parameter", "error", err)
+		return helper.Response(ctx, fiber.StatusBadRequest, false, helper.FAILEDGETDATA, err, nil)
+	}
+	if err := sc.server.Validate.Struct(&p); err != nil {
+		sc.server.Logger.Error("faild to validate path parameter", "error", err)
+		return helper.Response(ctx, fiber.StatusBadRequest, false, helper.FAILEDGETDATA, err, nil)
+	}
+	res, err := sc.uc.GetByID(ctx.Context(), p.ID)
+	if err != nil {
+		sc.server.Logger.Error("faild to get shop", "error", err)
+		if errors.Is(err, helper.ErrDataNotFound) {
+			return helper.Response(ctx, fiber.StatusBadRequest, false, helper.FAILEDGETDATA, err, nil)
+		}
 
-}*/
+		return helper.Response(ctx, fiber.StatusInternalServerError, false, helper.FAILEDGETDATA, err, nil)
+	}
+	rsp := NewShopRespose(*res)
+
+	return helper.Response(ctx, fiber.StatusOK, true, helper.SUCCEEDGETDATA, nil, rsp)
+}
+
+// Update handels PUT /shops/:id resquest
+func (sc *ShopControllerV1) Update(ctx *fiber.Ctx) error {
+	var shopUR updateShopResquest
+
+	if err := ctx.BodyParser(&shopUR); err != nil {
+		sc.server.Logger.Error("faild to parse request body", "error", err)
+		return helper.Response(ctx, fiber.StatusBadRequest, false, helper.FAILEDGETDATA, err, nil)
+	}
+
+	var p shopParam
+	if err := ctx.ParamsParser(&p); err != nil {
+		sc.server.Logger.Error("faild to parse path parameter", "error", err)
+		return helper.Response(ctx, fiber.StatusBadRequest, false, helper.FAILEDGETDATA, err, nil)
+	}
+	if err := sc.server.Validate.Struct(&p); err != nil {
+		sc.server.Logger.Error("faild to validate path parameter", "error", err)
+		return helper.Response(ctx, fiber.StatusBadRequest, false, helper.FAILEDGETDATA, err, nil)
+	}
+	userID := ctx.Locals("user_id").(uint)
+
+	if err := sc.uc.Update(ctx.Context(), userID, p.ID); err != nil {
+		sc.server.Logger.Error("faild to update shop", "error", err)
+
+		if errors.Is(err, helper.ErrDataNotFound) {
+			return helper.Response(ctx, fiber.StatusNotFound, false, helper.FAILEDGETDATA, err, nil)
+		}
+		return helper.Response(ctx, fiber.StatusInternalServerError, false, helper.FAILEDGETDATA, err, nil)
+	}
+	return helper.Response(ctx, fiber.StatusOK, true, helper.SUCCEEDPUTDATA, nil, nil)
+}
