@@ -6,6 +6,7 @@ import (
 	"github.com/Joskeiner/Api_e-commerce/internal/pkg/database"
 	"github.com/Joskeiner/Api_e-commerce/internal/pkg/log"
 	"github.com/Joskeiner/Api_e-commerce/internal/pkg/server/http"
+	"github.com/Joskeiner/Api_e-commerce/internal/pkg/token"
 )
 
 // Run is the entrypoint of the application , dependecies are injected here
@@ -41,6 +42,11 @@ func Run() {
 		log.Fatal("faild to migrate the database", "error", err)
 	}
 	log.Info("succed to migrate the database")
+	// config token
+	token, err := token.New(cfg.Token)
+	if err != nil {
+		log.Fatal("faild to initialize the token provider", "error", err)
+	}
 
 	server := http.New(cfg.Http, log)
 
