@@ -5,7 +5,7 @@ import (
 	"time"
 
 	cityD "github.com/Joskeiner/Api_e-commerce/internal/app/city/domain"
-	provD "github.com/Joskeiner/Api_e-commerce/internal/app/provice/domain"
+	provD "github.com/Joskeiner/Api_e-commerce/internal/app/province/domain"
 )
 
 // User is a struct that represents the User account.

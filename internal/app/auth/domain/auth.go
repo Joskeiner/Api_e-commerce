@@ -4,7 +4,7 @@ import (
 	"context"
 
 	cityDom "github.com/Joskeiner/Api_e-commerce/internal/app/city/domain"
-	provDom "github.com/Joskeiner/Api_e-commerce/internal/app/provice/domain"
+	provDom "github.com/Joskeiner/Api_e-commerce/internal/app/province/domain"
 	userDom "github.com/Joskeiner/Api_e-commerce/internal/app/user/domain"
 )
 
