@@ -11,7 +11,7 @@ type (
 		App      *App
 		Http     *Http
 		Databese *Databese
-		// Token    *Token
+		Token    *Token
 	}
 	App struct {
 		Name string `mapstructure:"APP_NAME"`
