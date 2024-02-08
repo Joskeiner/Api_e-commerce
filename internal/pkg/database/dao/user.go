@@ -18,4 +18,5 @@ type User struct {
 	Shop         *Shop         `gorm:"foreignkey:UserID"`
 	IsAdmin      bool          `json:"is_admin" gorm:"default:false"`
 	Transactions []Transaction `json:"transaction"`
+	ProvinceID   string        `json:"province_id"`
 }
