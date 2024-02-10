@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "province_id": 24,
+        "name": "San Miguel de Tucumán"
+    },
+    {
+        "id": 2,
+        "province_id": 24,
+        "name": "Yerba Buena"
+    },
+    {
+        "id": 3,
+        "province_id": 24,
+        "name": "Tafí Viejo"
+    },
+    {
+        "id": 4,
+        "province_id": 24,
+        "name": "Banda del Río Salí"
+    },
+    {
+        "id": 5,
+        "province_id": 24,
+        "name": "Alderetes"
+    },
+    {
+        "id": 6,
+        "province_id": 24,
+        "name": "Famaillá"
+    },
+    {
+        "id": 7,
+        "province_id": 24,
+        "name": "Tafí del Valle"
+    },
+    {
+        "id": 8,
+        "province_id": 24,
+        "name": "Concepción"
+    },
+    {
+        "id": 9,
+        "province_id": 24,
+        "name": "Monteros"
+    },
+    {
+        "id": 10,
+        "province_id": 24,
+        "name": "Lules"
+    }
+]
+

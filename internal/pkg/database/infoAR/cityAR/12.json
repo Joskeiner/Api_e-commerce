@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "province_id": 12,
+        "name": "La Rioja Capital"
+    },
+    {
+        "id": 2,
+        "province_id": 12,
+        "name": "Chilecito"
+    },
+    {
+        "id": 3,
+        "province_id": 12,
+        "name": "Aimogasta"
+    },
+    {
+        "id": 4,
+        "province_id": 12,
+        "name": "Chepes"
+    },
+    {
+        "id": 5,
+        "province_id": 12,
+        "name": "Famatina"
+    },
+    {
+        "id": 6,
+        "province_id": 12,
+        "name": "Villa Unión"
+    },
+    {
+        "id": 7,
+        "province_id": 12,
+        "name": "Anillaco"
+    },
+    {
+        "id": 8,
+        "province_id": 12,
+        "name": "Chamical"
+    },
+    {
+        "id": 9,
+        "province_id": 12,
+        "name": "Vinchina"
+    },
+    {
+        "id": 10,
+        "province_id": 12,
+        "name": "Milagro"
+    }
+]
+

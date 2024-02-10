@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "province_id": 4,
+        "name": "Rawson"
+    },
+    {
+        "id": 2,
+        "province_id": 4,
+        "name": "Trelew"
+    },
+    {
+        "id": 3,
+        "province_id": 4,
+        "name": "Comodoro Rivadavia"
+    },
+    {
+        "id": 4,
+        "province_id": 4,
+        "name": "Puerto Madryn"
+    },
+    {
+        "id": 5,
+        "province_id": 4,
+        "name": "Esquel"
+    },
+    {
+        "id": 6,
+        "province_id": 4,
+        "name": "Gaiman"
+    },
+    {
+        "id": 7,
+        "province_id": 4,
+        "name": "Rawson"
+    },
+    {
+        "id": 8,
+        "province_id": 4,
+        "name": "Trevelin"
+    },
+    {
+        "id": 9,
+        "province_id": 4,
+        "name": "Dolavon"
+    },
+    {
+        "id": 10,
+        "province_id": 4,
+        "name": "Sarmiento"
+    }
+]
+

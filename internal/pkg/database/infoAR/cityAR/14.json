@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "province_id": 14,
+        "name": "Posadas"
+    },
+    {
+        "id": 2,
+        "province_id": 14,
+        "name": "Iguazú"
+    },
+    {
+        "id": 3,
+        "province_id": 14,
+        "name": "Oberá"
+    },
+    {
+        "id": 4,
+        "province_id": 14,
+        "name": "Eldorado"
+    },
+    {
+        "id": 5,
+        "province_id": 14,
+        "name": "Puerto Rico"
+    },
+    {
+        "id": 6,
+        "province_id": 14,
+        "name": "Apóstoles"
+    },
+    {
+        "id": 7,
+        "province_id": 14,
+        "name": "San Vicente"
+    },
+    {
+        "id": 8,
+        "province_id": 14,
+        "name": "Montecarlo"
+    },
+    {
+        "id": 9,
+        "province_id": 14,
+        "name": "Jardín América"
+    },
+    {
+        "id": 10,
+        "province_id": 14,
+        "name": "Garupá"
+    }
+]
+

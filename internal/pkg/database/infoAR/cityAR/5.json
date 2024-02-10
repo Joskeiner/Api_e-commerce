@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "province_id": 5,
+        "name": "Recoleta"
+    },
+    {
+        "id": 2,
+        "province_id": 5,
+        "name": "Palermo"
+    },
+    {
+        "id": 3,
+        "province_id": 5,
+        "name": "Belgrano"
+    },
+    {
+        "id": 4,
+        "province_id": 5,
+        "name": "San Telmo"
+    },
+    {
+        "id": 5,
+        "province_id": 5,
+        "name": "La Boca"
+    },
+    {
+        "id": 6,
+        "province_id": 5,
+        "name": "Caballito"
+    },
+    {
+        "id": 7,
+        "province_id": 5,
+        "name": "Almagro"
+    },
+    {
+        "id": 8,
+        "province_id": 5,
+        "name": "Villa Crespo"
+    },
+    {
+        "id": 9,
+        "province_id": 5,
+        "name": "Nuñez"
+    },
+    {
+        "id": 10,
+        "province_id": 5,
+        "name": "Boedo"
+    }
+]
+

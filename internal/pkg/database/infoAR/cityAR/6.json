@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "province_id": 6,
+        "name": "Córdoba Capital"
+    },
+    {
+        "id": 2,
+        "province_id": 6,
+        "name": "Villa María"
+    },
+    {
+        "id": 3,
+        "province_id": 6,
+        "name": "Río Cuarto"
+    },
+    {
+        "id": 4,
+        "province_id": 6,
+        "name": "Jesús María"
+    },
+    {
+        "id": 5,
+        "province_id": 6,
+        "name": "Alta Gracia"
+    },
+    {
+        "id": 6,
+        "province_id": 6,
+        "name": "Bell Ville"
+    },
+    {
+        "id": 7,
+        "province_id": 6,
+        "name": "Villa Carlos Paz"
+    },
+    {
+        "id": 8,
+        "province_id": 6,
+        "name": "San Francisco"
+    },
+    {
+        "id": 9,
+        "province_id": 6,
+        "name": "La Calera"
+    },
+    {
+        "id": 10,
+        "province_id": 6,
+        "name": "Arroyito"
+    }
+]
+

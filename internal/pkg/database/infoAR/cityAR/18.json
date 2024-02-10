@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "province_id": 18,
+        "name": "San Juan"
+    },
+    {
+        "id": 2,
+        "province_id": 18,
+        "name": "Rawson"
+    },
+    {
+        "id": 3,
+        "province_id": 18,
+        "name": "Rivadavia"
+    },
+    {
+        "id": 4,
+        "province_id": 18,
+        "name": "Pocito"
+    },
+    {
+        "id": 5,
+        "province_id": 18,
+        "name": "Caucete"
+    },
+    {
+        "id": 6,
+        "province_id": 18,
+        "name": "Chimbas"
+    },
+    {
+        "id": 7,
+        "province_id": 18,
+        "name": "Santa Lucía"
+    },
+    {
+        "id": 8,
+        "province_id": 18,
+        "name": "Albardón"
+    },
+    {
+        "id": 9,
+        "province_id": 18,
+        "name": "9 de Julio"
+    },
+    {
+        "id": 10,
+        "province_id": 18,
+        "name": "Angaco"
+    }
+]
+

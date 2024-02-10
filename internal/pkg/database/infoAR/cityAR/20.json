@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "province_id": 20,
+        "name": "Río Gallegos"
+    },
+    {
+        "id": 2,
+        "province_id": 20,
+        "name": "Caleta Olivia"
+    },
+    {
+        "id": 3,
+        "province_id": 20,
+        "name": "Puerto San Julián"
+    },
+    {
+        "id": 4,
+        "province_id": 20,
+        "name": "El Calafate"
+    },
+    {
+        "id": 5,
+        "province_id": 20,
+        "name": "Perito Moreno"
+    },
+    {
+        "id": 6,
+        "province_id": 20,
+        "name": "Puerto Deseado"
+    },
+    {
+        "id": 7,
+        "province_id": 20,
+        "name": "Pico Truncado"
+    },
+    {
+        "id": 8,
+        "province_id": 20,
+        "name": "Las Heras"
+    },
+    {
+        "id": 9,
+        "province_id": 20,
+        "name": "Gobernador Gregores"
+    },
+    {
+        "id": 10,
+        "province_id": 20,
+        "name": "28 de Noviembre"
+    }
+]
+

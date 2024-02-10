@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "province_id": 8,
+        "name": "Paraná"
+    },
+    {
+        "id": 2,
+        "province_id": 8,
+        "name": "Concordia"
+    },
+    {
+        "id": 3,
+        "province_id": 8,
+        "name": "Gualeguaychú"
+    },
+    {
+        "id": 4,
+        "province_id": 8,
+        "name": "Victoria"
+    },
+    {
+        "id": 5,
+        "province_id": 8,
+        "name": "Gualeguay"
+    },
+    {
+        "id": 6,
+        "province_id": 8,
+        "name": "Diamante"
+    },
+    {
+        "id": 7,
+        "province_id": 8,
+        "name": "La Paz"
+    },
+    {
+        "id": 8,
+        "province_id": 8,
+        "name": "Villaguay"
+    },
+    {
+        "id": 9,
+        "province_id": 8,
+        "name": "Colón"
+    },
+    {
+        "id": 10,
+        "province_id": 8,
+        "name": "Tala"
+    }
+]
+

@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "province_id": 19,
+        "name": "San Luis"
+    },
+    {
+        "id": 2,
+        "province_id": 19,
+        "name": "Villa Mercedes"
+    },
+    {
+        "id": 3,
+        "province_id": 19,
+        "name": "La Punta"
+    },
+    {
+        "id": 4,
+        "province_id": 19,
+        "name": "Merlo"
+    },
+    {
+        "id": 5,
+        "province_id": 19,
+        "name": "Santa Rosa del Conlara"
+    },
+    {
+        "id": 6,
+        "province_id": 19,
+        "name": "Juana Koslay"
+    },
+    {
+        "id": 7,
+        "province_id": 19,
+        "name": "Quines"
+    },
+    {
+        "id": 8,
+        "province_id": 19,
+        "name": "Concarán"
+    },
+    {
+        "id": 9,
+        "province_id": 19,
+        "name": "Tilisarao"
+    },
+    {
+        "id": 10,
+        "province_id": 19,
+        "name": "Nueva Galia"
+    }
+]
+

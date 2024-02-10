@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "province_id": 17,
+        "name": "Salta"
+    },
+    {
+        "id": 2,
+        "province_id": 17,
+        "name": "San Ramón de la Nueva Orán"
+    },
+    {
+        "id": 3,
+        "province_id": 17,
+        "name": "San Salvador de Jujuy"
+    },
+    {
+        "id": 4,
+        "province_id": 17,
+        "name": "Tartagal"
+    },
+    {
+        "id": 5,
+        "province_id": 17,
+        "name": "Cafayate"
+    },
+    {
+        "id": 6,
+        "province_id": 17,
+        "name": "Metán"
+    },
+    {
+        "id": 7,
+        "province_id": 17,
+        "name": "Rosario de la Frontera"
+    },
+    {
+        "id": 8,
+        "province_id": 17,
+        "name": "Embarcación"
+    },
+    {
+        "id": 9,
+        "province_id": 17,
+        "name": "Orán"
+    },
+    {
+        "id": 10,
+        "province_id": 17,
+        "name": "Joaquín V. González"
+    }
+]
+

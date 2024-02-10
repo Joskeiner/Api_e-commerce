@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "province_id": 1,
+        "name": "La Plata"
+    },
+    {
+        "id": 2,
+        "province_id": 1,
+        "name": "Mar del Plata"
+    },
+    {
+        "id": 3,
+        "province_id": 1,
+        "name": "Bahía Blanca"
+    },
+    {
+        "id": 4,
+        "province_id": 1,
+        "name": "Tandil"
+    },
+    {
+        "id": 5,
+        "province_id": 1,
+        "name": "Quilmes"
+    },
+    {
+        "id": 6,
+        "province_id": 1,
+        "name": "Lomas de Zamora"
+    },
+    {
+        "id": 7,
+        "province_id": 1,
+        "name": "San Isidro"
+    },
+    {
+        "id": 8,
+        "province_id": 1,
+        "name": "Pergamino"
+    },
+    {
+        "id": 9,
+        "province_id": 1,
+        "name": "Olavarría"
+    },
+    {
+        "id": 10,
+        "province_id": 1,
+        "name": "San Nicolás de los Arroyos"
+    }
+]
+
