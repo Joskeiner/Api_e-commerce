@@ -1,53 +1,52 @@
 [
-    {
-        "id": 1,
-        "province_id": 10,
-        "name": "San Salvador de Jujuy"
-    },
-    {
-        "id": 2,
-        "province_id": 10,
-        "name": "Palpalá"
-    },
-    {
-        "id": 3,
-        "province_id": 10,
-        "name": "Libertador General San Martín"
-    },
-    {
-        "id": 4,
-        "province_id": 10,
-        "name": "Humahuaca"
-    },
-    {
-        "id": 5,
-        "province_id": 10,
-        "name": "San Pedro"
-    },
-    {
-        "id": 6,
-        "province_id": 10,
-        "name": "La Quiaca"
-    },
-    {
-        "id": 7,
-        "province_id": 10,
-        "name": "Perico"
-    },
-    {
-        "id": 8,
-        "province_id": 10,
-        "name": "El Carmen"
-    },
-    {
-        "id": 9,
-        "province_id": 10,
-        "name": "Tilcara"
-    },
-    {
-        "id": 10,
-        "province_id": 10,
-        "name": "Purmamarca"
-    }
+  {
+    "id": 81,
+    "province_id": 10,
+    "name": "San Salvador de Jujuy"
+  },
+  {
+    "id": 82,
+    "province_id": 10,
+    "name": "Palpalá"
+  },
+  {
+    "id": 83,
+    "province_id": 10,
+    "name": "Libertador General San Martín"
+  },
+  {
+    "id": 84,
+    "province_id": 10,
+    "name": "Humahuaca"
+  },
+  {
+    "id": 85,
+    "province_id": 10,
+    "name": "San Pedro"
+  },
+  {
+    "id": 86,
+    "province_id": 10,
+    "name": "La Quiaca"
+  },
+  {
+    "id": 87,
+    "province_id": 10,
+    "name": "Perico"
+  },
+  {
+    "id": 88,
+    "province_id": 10,
+    "name": "El Carmen"
+  },
+  {
+    "id": 89,
+    "province_id": 10,
+    "name": "Tilcara"
+  },
+  {
+    "id": 90,
+    "province_id": 10,
+    "name": "Purmamarca"
+  }
 ]
-
