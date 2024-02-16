@@ -39,7 +39,7 @@ func (j *Jwt) Create(userID uint, isAdmin bool) (string, error) {
 }
 
 // verify checks if the token is valid or not
-func (j *Jwt) verify(token string) (*Payload, error) {
+func (j *Jwt) Verify(token string) (*Payload, error) {
 	KeyFunc := func(token *jwt.Token) (any, error) {
 		_, ok := token.Method.(*jwt.SigningMethodHMAC)
 		if !ok {

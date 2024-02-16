@@ -4,41 +4,41 @@ import (
 	"context"
 	"time"
 
-	cityD "github.com/Joskeiner/Api_e-commerce/internal/app/city/domain"
-	provD "github.com/Joskeiner/Api_e-commerce/internal/app/province/domain"
+	cityDom "github.com/Joskeiner/Api_e-commerce/internal/app/city/domain"
+	provDom "github.com/Joskeiner/Api_e-commerce/internal/app/province/domain"
 )
 
 // User is a struct that represents the User account.
 type User struct {
-	ID          uint            `json:"id"`
-	Name        string          `json:"name"`
-	Password    string          `json:"password"`
-	PhoneNumber string          `json:"phone_number"`
-	Email       string          `json:"email"`
-	BirthDate   time.Time       `json:"birth_date"`
-	About       string          `json:"about"`
-	Job         string          `json:"job"`
-	ProvinceID  string          `json:"province_id"`
-	CityID      string          `json:"city_id"`
-	Province    *provD.Province `json:"province"`
-	City        *cityD.City     `json:"city"`
-	IsAdmin     bool            `json:"is_admin"`
+	ID          uint              `json:"id"`
+	Name        string            `json:"name"`
+	Password    string            `json:"password"`
+	PhoneNumber string            `json:"phone_number"`
+	Email       string            `json:"email"`
+	BirthDate   time.Time         `json:"birth_date" `
+	About       string            `json:"about"`
+	Job         string            `json:"job"`
+	ProvinceID  string            `json:"province_id"`
+	CityID      string            `json:"city_id"`
+	Province    *provDom.Province `json:"province"`
+	City        *cityDom.City     `json:"city"`
+	IsAdmin     bool              `json:"is_admin"`
 }
 
-// UserRepository is an interface that provides access to the Use storage
+// UserRepository is an interface that provides access to the User storage.
 type UserRepository interface {
-	// GetByID retuns the User with the specified ID
+	// GetByID returns the User with the specified ID.
 	GetByID(ctx context.Context, id uint) (*User, error)
-	// Update update the User with the specified Id
+	// Update updates the User with the specified ID.
 	Update(ctx context.Context, user *User) error
-	// IsAdmin checks is the User with the specified ID is admin
+	// IsAdmin checks if the User with the specified ID is an admin.
 	IsAdmin(ctx context.Context, id uint) (bool, error)
 }
 
-// UserUseCase is an interface that provide business logic for user
-type UserUseCase interface {
-	// GetByID returns the user with the specified id
+// UserUsecase is an interface that provides business logic for User.
+type UserUsecase interface {
+	// GetByID returns the User with the specified ID.
 	GetByID(ctx context.Context, id uint) (*User, error)
-	// Update update the User with the specified id
+	// Update updates the User with the specified ID.
 	Update(ctx context.Context, user *User) error
 }
