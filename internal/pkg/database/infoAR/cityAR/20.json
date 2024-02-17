@@ -1,52 +1,52 @@
 [
   {
-    "id": 171,
-    "province_id": 20,
+    "id": "171",
+    "province_id": "20",
     "name": "Río Gallegos"
   },
   {
-    "id": 172,
-    "province_id": 20,
+    "id": "172",
+    "province_id": "20",
     "name": "Caleta Olivia"
   },
   {
-    "id": 173,
-    "province_id": 20,
+    "id": "173",
+    "province_id": "20",
     "name": "Puerto San Julián"
   },
   {
-    "id": 174,
-    "province_id": 20,
+    "id": "174",
+    "province_id": "20",
     "name": "El Calafate"
   },
   {
-    "id": 175,
-    "province_id": 20,
+    "id": "175",
+    "province_id": "20",
     "name": "Perito Moreno"
   },
   {
-    "id": 176,
-    "province_id": 20,
+    "id": "176",
+    "province_id": "20",
     "name": "Puerto Deseado"
   },
   {
-    "id": 177,
-    "province_id": 20,
+    "id": "177",
+    "province_id": "20",
     "name": "Pico Truncado"
   },
   {
-    "id": 178,
-    "province_id": 20,
+    "id": "178",
+    "province_id": "20",
     "name": "Las Heras"
   },
   {
-    "id": 179,
-    "province_id": 20,
+    "id": "179",
+    "province_id": "20",
     "name": "Gobernador Gregores"
   },
   {
-    "id": 180,
-    "province_id": 20,
+    "id": "180",
+    "province_id": "20",
     "name": "28 de Noviembre"
   }
 ]

@@ -1,52 +1,52 @@
 [
   {
-    "id": 181,
-    "province_id": 21,
+    "id": "181",
+    "province_id": "21",
     "name": "Santa Fe"
   },
   {
-    "id": 182,
-    "province_id": 21,
+    "id": "182",
+    "province_id": "21",
     "name": "Rosario"
   },
   {
-    "id": 183,
-    "province_id": 21,
+    "id": "183",
+    "province_id": "21",
     "name": "Venado Tuerto"
   },
   {
-    "id": 184,
-    "province_id": 21,
+    "id": "184",
+    "province_id": "21",
     "name": "Rafaela"
   },
   {
-    "id": 185,
-    "province_id": 21,
+    "id": "185",
+    "province_id": "21",
     "name": "Santo Tomé"
   },
   {
-    "id": 186,
-    "province_id": 21,
+    "id": "186",
+    "province_id": "21",
     "name": "San Justo"
   },
   {
-    "id": 187,
-    "province_id": 21,
+    "id": "187",
+    "province_id": "21",
     "name": "Reconquista"
   },
   {
-    "id": 188,
-    "province_id": 21,
+    "id": "188",
+    "province_id": "21",
     "name": "Firmat"
   },
   {
-    "id": 189,
-    "province_id": 21,
+    "id": "189",
+    "province_id": "21",
     "name": "Casilda"
   },
   {
-    "id": 190,
-    "province_id": 21,
+    "id": "190",
+    "province_id": "21",
     "name": "Esperanza"
   }
 ]

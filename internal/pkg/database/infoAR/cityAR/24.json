@@ -1,52 +1,52 @@
 [
   {
-    "id": 211,
-    "province_id": 24,
+    "id": "211",
+    "province_id": "24",
     "name": "San Miguel de Tucumán"
   },
   {
-    "id": 212,
-    "province_id": 24,
+    "id": "212",
+    "province_id": "24",
     "name": "Yerba Buena"
   },
   {
-    "id": 213,
-    "province_id": 24,
+    "id": "213",
+    "province_id": "24",
     "name": "Tafí Viejo"
   },
   {
-    "id": 214,
-    "province_id": 24,
+    "id": "214",
+    "province_id": "24",
     "name": "Banda del Río Salí"
   },
   {
-    "id": 215,
-    "province_id": 24,
+    "id": "215",
+    "province_id": "24",
     "name": "Alderetes"
   },
   {
-    "id": 216,
-    "province_id": 24,
+    "id": "216",
+    "province_id": "24",
     "name": "Famaillá"
   },
   {
-    "id": 217,
-    "province_id": 24,
+    "id": "217",
+    "province_id": "24",
     "name": "Tafí del Valle"
   },
   {
-    "id": 218,
-    "province_id": 24,
+    "id": "218",
+    "province_id": "24",
     "name": "Concepción"
   },
   {
-    "id": 219,
-    "province_id": 24,
+    "id": "219",
+    "province_id": "24",
     "name": "Monteros"
   },
   {
-    "id": 220,
-    "province_id": 24,
+    "id": "220",
+    "province_id": "24",
     "name": "Lules"
   }
 ]

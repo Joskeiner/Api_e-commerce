@@ -1,52 +1,52 @@
 [
   {
-    "id": 151,
-    "province_id": 16,
+    "id": "151",
+    "province_id": "16",
     "name": "Viedma"
   },
   {
-    "id": 152,
-    "province_id": 16,
+    "id": "152",
+    "province_id": "16",
     "name": "General Roca"
   },
   {
-    "id": 153,
-    "province_id": 16,
+    "id": "153",
+    "province_id": "16",
     "name": "Bariloche"
   },
   {
-    "id": 154,
-    "province_id": 16,
+    "id": "154",
+    "province_id": "16",
     "name": "Cipolletti"
   },
   {
-    "id": 155,
-    "province_id": 16,
+    "id": "155",
+    "province_id": "16",
     "name": "Allen"
   },
   {
-    "id": 156,
-    "province_id": 16,
+    "id": "156",
+    "province_id": "16",
     "name": "Villa Regina"
   },
   {
-    "id": 157,
-    "province_id": 16,
+    "id": "157",
+    "province_id": "16",
     "name": "Choele Choel"
   },
   {
-    "id": 158,
-    "province_id": 16,
+    "id": "158",
+    "province_id": "16",
     "name": "Cinco Saltos"
   },
   {
-    "id": 159,
-    "province_id": 16,
+    "id": "159",
+    "province_id": "16",
     "name": "San Carlos de Bariloche"
   },
   {
-    "id": 160,
-    "province_id": 16,
+    "id": "160",
+    "province_id": "16",
     "name": "Ingeniero Huergo"
   }
 ]

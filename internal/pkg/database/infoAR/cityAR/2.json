@@ -1,52 +1,52 @@
 [
   {
-    "id": 11,
-    "province_id": 2,
+    "id": "11",
+    "province_id": "2",
     "name": "San Fernando del Valle de Catamarca"
   },
   {
-    "id": 12,
-    "province_id": 2,
+    "id": "12",
+    "province_id": "2",
     "name": "Andalgalá"
   },
   {
-    "id": 13,
-    "province_id": 2,
+    "id": "13",
+    "province_id": "2",
     "name": "Belén"
   },
   {
-    "id": 14,
-    "province_id": 2,
+    "id": "14",
+    "province_id": "2",
     "name": "Santa María"
   },
   {
-    "id": 15,
-    "province_id": 2,
+    "id": "15",
+    "province_id": "2",
     "name": "Tinogasta"
   },
   {
-    "id": 16,
-    "province_id": 2,
+    "id": "16",
+    "province_id": "2",
     "name": "La Puerta"
   },
   {
-    "id": 17,
-    "province_id": 2,
+    "id": "17",
+    "province_id": "2",
     "name": "Recreo"
   },
   {
-    "id": 18,
-    "province_id": 2,
+    "id": "18",
+    "province_id": "2",
     "name": "Fiambalá"
   },
   {
-    "id": 19,
-    "province_id": 2,
+    "id": "19",
+    "province_id": "2",
     "name": "Saujil"
   },
   {
-    "id": 20,
-    "province_id": 2,
+    "id": "20",
+    "province_id": "2",
     "name": "Capayán"
   }
 ]

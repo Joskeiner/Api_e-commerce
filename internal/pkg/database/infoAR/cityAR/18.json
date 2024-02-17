@@ -1,52 +1,52 @@
 [
   {
-    "id": 191,
-    "province_id": 18,
+    "id": "191",
+    "province_id": "18",
     "name": "San Juan"
   },
   {
-    "id": 192,
-    "province_id": 18,
+    "id": "192",
+    "province_id": "18",
     "name": "Rawson"
   },
   {
-    "id": 193,
-    "province_id": 18,
+    "id": "193",
+    "province_id": "18",
     "name": "Rivadavia"
   },
   {
-    "id": 194,
-    "province_id": 18,
+    "id": "194",
+    "province_id": "18",
     "name": "Pocito"
   },
   {
-    "id": 195,
-    "province_id": 18,
+    "id": "195",
+    "province_id": "18",
     "name": "Caucete"
   },
   {
-    "id": 196,
-    "province_id": 18,
+    "id": "196",
+    "province_id": "18",
     "name": "Chimbas"
   },
   {
-    "id": 197,
-    "province_id": 18,
+    "id": "197",
+    "province_id": "18",
     "name": "Santa Lucía"
   },
   {
-    "id": 198,
-    "province_id": 18,
+    "id": "198",
+    "province_id": "18",
     "name": "Albardón"
   },
   {
-    "id": 199,
-    "province_id": 18,
+    "id": "199",
+    "province_id": "18",
     "name": "9 de Julio"
   },
   {
-    "id": 200,
-    "province_id": 18,
+    "id": "200",
+    "province_id": "18",
     "name": "Angaco"
   }
 ]

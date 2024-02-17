@@ -1,52 +1,52 @@
 [
   {
-    "id": 181,
-    "province_id": 19,
+    "id": "181",
+    "province_id": "19",
     "name": "San Luis"
   },
   {
-    "id": 182,
-    "province_id": 19,
+    "id": "182",
+    "province_id": "19",
     "name": "Villa Mercedes"
   },
   {
-    "id": 183,
-    "province_id": 19,
+    "id": "183",
+    "province_id": "19",
     "name": "La Punta"
   },
   {
-    "id": 184,
-    "province_id": 19,
+    "id": "184",
+    "province_id": "19",
     "name": "Merlo"
   },
   {
-    "id": 185,
-    "province_id": 19,
+    "id": "185",
+    "province_id": "19",
     "name": "Santa Rosa del Conlara"
   },
   {
-    "id": 186,
-    "province_id": 19,
+    "id": "186",
+    "province_id": "19",
     "name": "Juana Koslay"
   },
   {
-    "id": 187,
-    "province_id": 19,
+    "id": "187",
+    "province_id": "19",
     "name": "Quines"
   },
   {
-    "id": 188,
-    "province_id": 19,
+    "id": "188",
+    "province_id": "19",
     "name": "Concarán"
   },
   {
-    "id": 189,
-    "province_id": 19,
+    "id": "189",
+    "province_id": "19",
     "name": "Tilisarao"
   },
   {
-    "id": 190,
-    "province_id": 19,
+    "id": "190",
+    "province_id": "19",
     "name": "Nueva Galia"
   }
 ]

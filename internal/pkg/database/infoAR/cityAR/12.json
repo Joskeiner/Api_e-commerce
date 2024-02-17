@@ -1,52 +1,52 @@
 [
   {
-    "id": 111,
-    "province_id": 12,
+    "id": "111",
+    "province_id": "12",
     "name": "La Rioja Capital"
   },
   {
-    "id": 112,
-    "province_id": 12,
+    "id": "112",
+    "province_id": "12",
     "name": "Chilecito"
   },
   {
-    "id": 113,
-    "province_id": 12,
+    "id": "113",
+    "province_id": "12",
     "name": "Aimogasta"
   },
   {
-    "id": 114,
-    "province_id": 12,
+    "id": "114",
+    "province_id": "12",
     "name": "Chepes"
   },
   {
-    "id": 115,
-    "province_id": 12,
+    "id": "115",
+    "province_id": "12",
     "name": "Famatina"
   },
   {
-    "id": 116,
-    "province_id": 12,
+    "id": "116",
+    "province_id": "12",
     "name": "Villa Unión"
   },
   {
-    "id": 117,
-    "province_id": 12,
+    "id": "117",
+    "province_id": "12",
     "name": "Anillaco"
   },
   {
-    "id": 118,
-    "province_id": 12,
+    "id": "118",
+    "province_id": "12",
     "name": "Chamical"
   },
   {
-    "id": 119,
-    "province_id": 12,
+    "id": "119",
+    "province_id": "12",
     "name": "Vinchina"
   },
   {
-    "id": 120,
-    "province_id": 12,
+    "id": "120",
+    "province_id": "12",
     "name": "Milagro"
   }
 ]

@@ -1,52 +1,52 @@
 [
   {
-    "id": 51,
-    "province_id": 6,
+    "id": "51",
+    "province_id": "6",
     "name": "Córdoba Capital"
   },
   {
-    "id": 52,
-    "province_id": 6,
+    "id": "52",
+    "province_id": "6",
     "name": "Villa María"
   },
   {
-    "id": 53,
-    "province_id": 6,
+    "id": "53",
+    "province_id": "6",
     "name": "Río Cuarto"
   },
   {
-    "id": 54,
-    "province_id": 6,
+    "id": "54",
+    "province_id": "6",
     "name": "Jesús María"
   },
   {
-    "id": 55,
-    "province_id": 6,
+    "id": "55",
+    "province_id": "6",
     "name": "Alta Gracia"
   },
   {
-    "id": 56,
-    "province_id": 6,
+    "id": "56",
+    "province_id": "6",
     "name": "Bell Ville"
   },
   {
-    "id": 57,
-    "province_id": 6,
+    "id": "57",
+    "province_id": "6",
     "name": "Villa Carlos Paz"
   },
   {
-    "id": 58,
-    "province_id": 6,
+    "id": "58",
+    "province_id": "6",
     "name": "San Francisco"
   },
   {
-    "id": 59,
-    "province_id": 6,
+    "id": "59",
+    "province_id": "6",
     "name": "La Calera"
   },
   {
-    "id": 60,
-    "province_id": 6,
+    "id": "60",
+    "province_id": "6",
     "name": "Arroyito"
   }
 ]

@@ -1,52 +1,52 @@
 [
   {
-    "id": 71,
-    "province_id": 8,
+    "id": "71",
+    "province_id": "8",
     "name": "Paraná"
   },
   {
-    "id": 72,
-    "province_id": 8,
+    "id": "72",
+    "province_id": "8",
     "name": "Concordia"
   },
   {
-    "id": 73,
-    "province_id": 8,
+    "id": "73",
+    "province_id": "8",
     "name": "Gualeguaychú"
   },
   {
-    "id": 74,
-    "province_id": 8,
+    "id": "74",
+    "province_id": "8",
     "name": "Victoria"
   },
   {
-    "id": 75,
-    "province_id": 8,
+    "id": "75",
+    "province_id": "8",
     "name": "Gualeguay"
   },
   {
-    "id": 76,
-    "province_id": 8,
+    "id": "76",
+    "province_id": "8",
     "name": "Diamante"
   },
   {
-    "id": 77,
-    "province_id": 8,
+    "id": "77",
+    "province_id": "8",
     "name": "La Paz"
   },
   {
-    "id": 78,
-    "province_id": 8,
+    "id": "78",
+    "province_id": "8",
     "name": "Villaguay"
   },
   {
-    "id": 79,
-    "province_id": 8,
+    "id": "79",
+    "province_id": "8",
     "name": "Colón"
   },
   {
-    "id": 80,
-    "province_id": 8,
+    "id": "80",
+    "province_id": "8",
     "name": "Tala"
   }
 ]

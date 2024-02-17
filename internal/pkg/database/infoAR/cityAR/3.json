@@ -1,52 +1,52 @@
 [
   {
-    "id": 21,
-    "province_id": 3,
+    "id": "21",
+    "province_id": "3",
     "name": "Resistencia"
   },
   {
-    "id": 22,
-    "province_id": 3,
+    "id": "22",
+    "province_id": "3",
     "name": "Barranqueras"
   },
   {
-    "id": 23,
-    "province_id": 3,
+    "id": "23",
+    "province_id": "3",
     "name": "Fontana"
   },
   {
-    "id": 24,
-    "province_id": 3,
+    "id": "24",
+    "province_id": "3",
     "name": "Presidencia Roque Sáenz Peña"
   },
   {
-    "id": 25,
-    "province_id": 3,
+    "id": "25",
+    "province_id": "3",
     "name": "Charata"
   },
   {
-    "id": 26,
-    "province_id": 3,
+    "id": "26",
+    "province_id": "3",
     "name": "Villa Ángela"
   },
   {
-    "id": 27,
-    "province_id": 3,
+    "id": "27",
+    "province_id": "3",
     "name": "Las Breñas"
   },
   {
-    "id": 28,
-    "province_id": 3,
+    "id": "28",
+    "province_id": "3",
     "name": "Machagai"
   },
   {
-    "id": 29,
-    "province_id": 3,
+    "id": "29",
+    "province_id": "3",
     "name": "Quitilipi"
   },
   {
-    "id": 30,
-    "province_id": 3,
+    "id": "30",
+    "province_id": "3",
     "name": "Villa Berthet"
   }
 ]

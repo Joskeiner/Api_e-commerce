@@ -1,52 +1,52 @@
 [
   {
-    "id": 191,
-    "province_id": 22,
+    "id": "191",
+    "province_id": "22",
     "name": "Santiago del Estero"
   },
   {
-    "id": 192,
-    "province_id": 22,
+    "id": "192",
+    "province_id": "22",
     "name": "La Banda"
   },
   {
-    "id": 193,
-    "province_id": 22,
+    "id": "193",
+    "province_id": "22",
     "name": "Termas de Río Hondo"
   },
   {
-    "id": 194,
-    "province_id": 22,
+    "id": "194",
+    "province_id": "22",
     "name": "Añatuya"
   },
   {
-    "id": 195,
-    "province_id": 22,
+    "id": "195",
+    "province_id": "22",
     "name": "Fernández"
   },
   {
-    "id": 196,
-    "province_id": 22,
+    "id": "196",
+    "province_id": "22",
     "name": "Frías"
   },
   {
-    "id": 197,
-    "province_id": 22,
+    "id": "197",
+    "province_id": "22",
     "name": "Suncho Corral"
   },
   {
-    "id": 198,
-    "province_id": 22,
+    "id": "198",
+    "province_id": "22",
     "name": "Forres"
   },
   {
-    "id": 199,
-    "province_id": 22,
+    "id": "199",
+    "province_id": "22",
     "name": "Loreto"
   },
   {
-    "id": 200,
-    "province_id": 22,
+    "id": "200",
+    "province_id": "22",
     "name": "Clodomira"
   }
 ]
