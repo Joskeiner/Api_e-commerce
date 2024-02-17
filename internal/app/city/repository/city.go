@@ -3,6 +3,7 @@ package repository
 import (
 	"encoding/json"
 	"os"
+	"path/filepath"
 
 	"github.com/Joskeiner/Api_e-commerce/internal/app/city/domain"
 	"github.com/Joskeiner/Api_e-commerce/internal/pkg/helper"
@@ -14,7 +15,7 @@ type CityRepositoryJSON struct {
 }
 
 // base path is a constant that represents the base path of the API endpoint
-const basePath = "../../../pkg/database/infoAR/cityAR/"
+const basePath = "internal/pkg/database/infoAR/cityAR/"
 
 // New is function that returns new CityRepositoryJSON instance
 func New() domain.CityRepository {
@@ -25,7 +26,11 @@ func New() domain.CityRepository {
 
 // GetAll is a method that returns all Cities
 func (cr *CityRepositoryJSON) GetAll(provinceID string) ([]domain.City, error) {
-	url := basePath + provinceID + ".json"
+	path, err := os.Getwd()
+	if err != nil {
+		return nil, helper.ErrDataNotFound
+	}
+	url := filepath.Join(path, basePath, provinceID+".json")
 	content, err := os.ReadFile(url)
 	if err != nil {
 		return nil, helper.ErrDataNotFound
