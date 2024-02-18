@@ -50,12 +50,12 @@ func (au *AuthUseCase) Login(ctx context.Context, phoneNumber, password string) 
 	if err := helper.ComparePassword(password, user.Password); err != nil {
 		return nil, nil, nil, "", err
 	}
-	city, err := au.cityRepo.GetByID(user.Province.ID, user.CityID)
+	city, err := au.cityRepo.GetByID(user.ProvinceID, user.CityID)
 	if err != nil {
 		return nil, nil, nil, "", err
 	}
 
-	province, err := au.provRepo.GetByID(user.ProvinceID)
+	province, err := au.provRepo.GetByID(city.ProvinceID)
 	if err != nil {
 		return nil, nil, nil, "", err
 	}
@@ -64,5 +64,6 @@ func (au *AuthUseCase) Login(ctx context.Context, phoneNumber, password string) 
 	if err != nil {
 		return nil, nil, nil, "", err
 	}
+
 	return user, city, province, token, nil
 }

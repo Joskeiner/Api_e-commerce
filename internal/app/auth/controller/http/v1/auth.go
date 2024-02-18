@@ -24,17 +24,6 @@ func New(uc domain.AuthUseCase, server *http.Http) *AuthControllerV1 {
 	}
 }
 
-//Login handles POST /auth/login request
-/*func (ac *AuthControllerV1) Login (ctx *fiber.Ctx) error{
-  var req loginRequest
-
-  if err := ctx.BodyParser(&req); err != nil {
-    ac.server.Logger.Error("faild to parse request body ", "error", err)
-    return helper.Response(ctx , fiber.StatusBadRequest, false, helper.FAILEDPOSTDATA, err, nil)
-  }
-
-}*/
-
 // Register handles POST /auth/register request
 func (ac *AuthControllerV1) Register(ctx *fiber.Ctx) error {
 	var req registerRequest
@@ -65,4 +54,28 @@ func (ac *AuthControllerV1) Register(ctx *fiber.Ctx) error {
 		return helper.Response(ctx, fiber.StatusInternalServerError, false, helper.FAILEDPOSTDATA, err, nil)
 	}
 	return helper.Response(ctx, fiber.StatusCreated, true, helper.SUCCEEDPOSTDATA, nil, nil)
+}
+
+// Login handles POST /auth/login request
+func (ac *AuthControllerV1) Login(ctx *fiber.Ctx) error {
+	var req loginRequest
+
+	if err := ctx.BodyParser(&req); err != nil {
+		ac.server.Logger.Error("faild to parse request body ", "error", err)
+		return helper.Response(ctx, fiber.StatusBadRequest, false, helper.FAILEDPOSTDATA, err, nil)
+	}
+	user, city, province, token, err := ac.uc.Login(ctx.Context(), req.PhoneNumber, req.Password)
+	if city == nil {
+		ac.server.Logger.Error("faild city nil", "error", err)
+	}
+	if err != nil {
+		ac.server.Logger.Error("faild to login user", "error", err)
+
+		if errors.Is(err, helper.ErrDataNotFound) {
+			return helper.Response(ctx, fiber.StatusNotFound, false, helper.FAILEDPOSTDATA, err, nil)
+		}
+		return helper.Response(ctx, fiber.StatusInternalServerError, false, helper.FAILEDPOSTDATA, err, nil)
+	}
+	rsp := newLoginResponse(user, city, province, token)
+	return helper.Response(ctx, fiber.StatusOK, true, helper.SUCCEEDPOSTDATA, nil, rsp)
 }
