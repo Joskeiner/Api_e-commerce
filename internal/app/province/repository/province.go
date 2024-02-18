@@ -3,6 +3,7 @@ package repository
 import (
 	"encoding/json"
 	"os"
+	"path/filepath"
 
 	"github.com/Joskeiner/Api_e-commerce/internal/app/province/domain"
 	"github.com/Joskeiner/Api_e-commerce/internal/pkg/helper"
@@ -20,11 +21,15 @@ func New() domain.ProvinceRepository {
 }
 
 // basePath is a constant that represents the base path of the API endpoint
-const basePath = "../../../pkg/database/infoAR/"
+const basePath = "internal/pkg/database/infoAR/"
 
 // GetAll is a method that returns all province
 func (pr *ProvinceRepositoryJSON) GetAll() ([]domain.Province, error) {
-	url := basePath + "provinceAR.json"
+	path, err := os.Getwd()
+	if err != nil {
+		return nil, helper.ErrDataNotFound
+	}
+	url := filepath.Join(path, basePath, "provinceAR.json")
 
 	content, err := os.ReadFile(url)
 	if err != nil {
@@ -41,8 +46,12 @@ func (pr *ProvinceRepositoryJSON) GetAll() ([]domain.Province, error) {
 func (pr *ProvinceRepositoryJSON) GetByID(id string) (*domain.Province, error) {
 	prov, ok := pr.Province[id]
 	if !ok {
+		path, err := os.Getwd()
+		if err != nil {
+			return nil, helper.ErrDataNotFound
+		}
 
-		url := basePath + "provinceAR.json"
+		url := filepath.Join(path, basePath, "provinceAR.json")
 		content, err := os.ReadFile(url)
 		if err != nil {
 			return nil, helper.ErrDataNotFound
