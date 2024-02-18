@@ -2,6 +2,8 @@ package app
 
 import (
 	"github.com/Joskeiner/Api_e-commerce/internal/app/auth"
+	"github.com/Joskeiner/Api_e-commerce/internal/app/city"
+	"github.com/Joskeiner/Api_e-commerce/internal/app/province"
 	"github.com/Joskeiner/Api_e-commerce/internal/app/shop"
 	"github.com/Joskeiner/Api_e-commerce/internal/pkg/config"
 	"github.com/Joskeiner/Api_e-commerce/internal/pkg/database"
@@ -52,6 +54,8 @@ func Run() {
 	server := http.New(cfg.Http, log)
 
 	// dependency injection
+	province.New(server)
+	city.New(server)
 	auth.New(db, server, token)
 	shop.New(db, server)
 	log.Info("strating the aplication", "name", cfg.App.Name, "enviroment", cfg.App.Env)
