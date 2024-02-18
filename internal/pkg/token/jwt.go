@@ -2,6 +2,7 @@ package token
 
 import (
 	"errors"
+	"fmt"
 	"time"
 
 	"github.com/Joskeiner/Api_e-commerce/internal/pkg/helper"
@@ -32,8 +33,9 @@ func (j *Jwt) Create(userID uint, isAdmin bool) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	jwtToken := jwt.NewWithClaims(jwt.SigningMethodRS256, payload)
+	jwtToken := jwt.NewWithClaims(jwt.SigningMethodHS256, payload)
 	token, err := jwtToken.SignedString([]byte(j.secretKey))
+	fmt.Println(j.secretKey)
 
 	return token, nil
 }
