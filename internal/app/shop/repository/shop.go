@@ -45,9 +45,8 @@ func (sr *ShopRepository) GetAll(ctx context.Context, page, limit int, name stri
 // GetUserShop retuns the Shops With the specified User ID
 func (sr *ShopRepository) GetUserShop(ctx context.Context, UserID uint) (*domain.Shop, error) {
 	var dao dao.Shop
-	result := sr.conn.DB().First(&dao).Where("user_id", UserID).WithContext(ctx)
-
-	if result != nil {
+	result := sr.conn.DB().First(&dao).Where("user_id = ?", UserID).WithContext(ctx)
+	if result.Error != nil {
 		if result.Error.Error() == "record not found" {
 			return nil, helper.ErrDataNotFound
 		}
