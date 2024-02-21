@@ -34,7 +34,7 @@ cp .env.example .env
 
 Esquema de base de datos [Aqui](https://github.com/Joskeiner/Api_e-commerce/tree/main/UML) 
 
-swagger 
+swagger  en progreso
 
 
 ## Referencias
