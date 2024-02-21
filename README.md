@@ -41,5 +41,5 @@ swagger  en progreso
 
  - [go-clean-template](https://awesomeopensource.com/project/elangosundar/awesome-README-templates) by Evrone
  - [README](https://readme.so/es/editor)
- - [How to write a Good readme](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) by Uncle Bob
+ - [go-clean-arch ](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) by Uncle Bob
  - [gonmmerce](https://github.com/bagashiz/gommerce) by  bagashiz
