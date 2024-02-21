@@ -46,7 +46,7 @@ func AuthMiddleware(token token.Token) fiber.Handler {
 }
 
 // adminMiddleware is a middleware to check if the user is an admin
-func adminMiddleware() fiber.Handler {
+func AdminMiddleware() fiber.Handler {
 	return func(ctx *fiber.Ctx) error {
 		isAdmin := ctx.Locals("is_admin").(bool)
 
