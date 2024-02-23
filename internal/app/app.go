@@ -1,10 +1,13 @@
 package app
 
 import (
+	"github.com/Joskeiner/Api_e-commerce/internal/app/address"
 	"github.com/Joskeiner/Api_e-commerce/internal/app/auth"
+	"github.com/Joskeiner/Api_e-commerce/internal/app/category"
 	"github.com/Joskeiner/Api_e-commerce/internal/app/city"
 	"github.com/Joskeiner/Api_e-commerce/internal/app/province"
 	"github.com/Joskeiner/Api_e-commerce/internal/app/shop"
+	"github.com/Joskeiner/Api_e-commerce/internal/app/user"
 	"github.com/Joskeiner/Api_e-commerce/internal/pkg/config"
 	"github.com/Joskeiner/Api_e-commerce/internal/pkg/database"
 	"github.com/Joskeiner/Api_e-commerce/internal/pkg/log"
@@ -12,7 +15,6 @@ import (
 	"github.com/Joskeiner/Api_e-commerce/internal/pkg/token"
 )
 
-// Run is the entrypoint of the application , dependecies are injected here
 func Run() {
 	log, err := log.New()
 	if err != nil {
@@ -54,10 +56,13 @@ func Run() {
 	server := http.New(cfg.Http, log)
 
 	// dependency injection
+	user.New(db, server, token)
+	category.New(db, server, token)
+	address.New(db, server, token)
 	province.New(server)
 	city.New(server)
 	auth.New(db, server, token)
-	shop.New(db, server)
+	shop.New(db, server, token)
 	log.Info("strating the aplication", "name", cfg.App.Name, "enviroment", cfg.App.Env)
 
 	if err := server.Start(); err != nil {
